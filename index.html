@@ -1,14 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>hi</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BlueDepths Aquarium</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body>
- 
-  
+
+<div class="site">
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="logo">BD</div>
+  <nav class="nav-bar">
+    <a href="#home">Home</a>
+    <a href="#booking">Visit / Booking</a>
+    <a href="#exhibits">Exhibits</a>
+    <a href="#events">Events</a>
+    <a href="#membership">Membership</a>
+    <a href="#cafe">Cafe</a>
+    <a href="#hotels">Hotels</a>
+    <a href="#shop">Shop</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+    <a href="#games" class="game-btn">Games</a>
+  </nav>
+</header>
+
+<!-- ===== HERO ===== -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <h1>Welcome to BlueDepths Aquarium</h1>
+    <p>Explore marine life, interactive games, events, and dining experiences!</p>
+    <a href="#booking" class="btn-primary">Book Tickets</a>
+  </div>
+  <div class="hero-aquarium">
+    <div class="bubble" style="left:10%; animation-duration:6s;"></div>
+    <div class="bubble" style="left:35%; animation-duration:8s;"></div>
+    <div class="bubble" style="left:60%; animation-duration:7s;"></div>
+    <div class="fish fish1"></div>
+    <div class="fish fish2"></div>
+    <div class="fish fish3"></div>
+    <div class="seaweed seaweed1"></div>
+    <div class="seaweed seaweed2"></div>
+    <div class="seaweed seaweed3"></div>
+    <div class="seaweed seaweed4"></div>
+    <div class="light-rays"></div>
+  </div>
+</section>
+
+<!-- ===== BOOKING / VISIT ===== -->
+<section id="booking" class="section booking">
+  <h2>Visit / Booking</h2>
+  <p>Plan your visit! Tickets, hours, and special packages available below.</p>
+  <div class="booking-grid">
+    <div class="booking-photo">
+      <img src="https://images.unsplash.com/photo-1578926370193-9b0e51b83fc1?auto=format&fit=crop&w=600&q=80" alt="Aquarium Entrance">
+      <p>Entrance & Tickets</p>
+    </div>
+    <div class="booking-form">
+      <form>
+        <label>Name: <input type="text" placeholder="Full Name" required></label>
+        <label>Date: <input type="date" required></label>
+        <label>Visitors: <input type="number" min="1" value="1"></label>
+        <label>Package:
+          <select>
+            <option>Standard</option>
+            <option>VIP</option>
+            <option>Family</option>
+          </select>
+        </label>
+        <button type="submit" class="btn-primary">Book Now</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EXHIBITS ===== -->
+<section id="exhibits" class="section exhibits">
+  <h2>Our Exhibits</h2>
+  <div class="card-grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=80" alt="Clownfish">
+      <h3>Clownfish Exhibit</h3>
+      <p>Bright orange and white striped fish living among anemones.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&fit=crop&w=400&q=80" alt="Shark">
+      <h3>Shark Tank</h3>
+      <p>Watch majestic sharks swim in their natural habitat tank.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=400&q=80" alt="Octopus">
+      <h3>Octopus Cove</h3>
+      <p>Intelligent and fascinating octopuses in a specialized habitat.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1565058528601-5beaa35b3aa6?auto=format&fit=crop&w=400&q=80" alt="Seahorse">
+      <h3>Seahorse Garden</h3>
+      <p>Delicate seahorses floating gracefully among coral.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1544126594-8e24d3f0f3e8?auto=format&fit=crop&w=400&q=80" alt="Jellyfish">
+      <h3>Jellyfish Aquarium</h3>
+      <p>Mesmerizing jellyfish glowing in their tanks.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EVENTS ===== -->
+<section id="events" class="section events">
+  <h2>Upcoming Events</h2>
+  <div class="card-grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1564694202779-bc908c327862?auto=format&fit=crop&w=400&q=80" alt="Night Dive">
+      <h3>Night Dive Adventure</h3>
+      <p>Experience the aquarium after hours with guided tours.</p>
+      <p>Price: $50/person | Date: Oct 20, 2025</p>
+      <a href="#booking" class="btn-primary">Book Now</a>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1581041223932-94d2c90c6e8e?auto=format&fit=crop&w=400&q=80" alt="Workshop">
+      <h3>Marine Biology Workshop</h3>
+      <p>Hands-on experience learning about marine life.</p>
+      <p>Price: $35/person | Date: Oct 25, 2025</p>
+      <a href="#booking" class="btn-primary">Book Now</a>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1591012911207-4b982c2f6b29?auto=format&fit=crop&w=400&q=80" alt="Kids Program">
+      <h3>Kids Sea Exploration</h3>
+      <p>Fun educational activities for children ages 5-12.</p>
+      <p>Price: $25/person | Date: Nov 1, 2025</p>
+      <a href="#booking" class="btn-primary">Book Now</a>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1525309631016-5d48f3fa88b0?auto=format&fit=crop&w=400&q=80" alt="Coral Restoration">
+      <h3>Coral Restoration Day</h3>
+      <p>Participate in our coral conservation project.</p>
+      <p>Price: $40/person | Date: Nov 10, 2025</p>
+      <a href="#booking" class="btn-primary">Book Now</a>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1560347876-aeef00ee58a1?auto=format&fit=crop&w=400&q=80" alt="Photography Tour">
+      <h3>Photography Tour</h3>
+      <p>Capture the beauty of marine life with a guided photography session.</p>
+      <p>Price: $45/person | Date: Nov 15, 2025</p>
+      <a href="#booking" class="btn-primary">Book Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MEMBERSHIP ===== -->
+<section id="membership" class="section membership">
+  <h2>Membership</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Basic</h3>
+      <p>Free entry once a month.</p>
+      <p>Price: $60/year</p>
+      <a href="#booking" class="btn-primary">Join Now</a>
+    </div>
+    <div class="card">
+      <h3>Family</h3>
+      <p>Unlimited entry for family members.</p>
+      <p>Price: $180/year</p>
+      <a href="#booking" class="btn-primary">Join Now</a>
+    </div>
+    <div class="card">
+      <h3>Premium</h3>
+      <p>All access + VIP events & gifts.</p>
+      <p>Price: $300/year</p>
+      <a href="#booking" class="btn-primary">Join Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CAFE ===== -->
+<section id="cafe" class="section cafe">
+  <h2>Aquarium Cafe Menu</h2>
+  <h3>Drinks</h3>
+  <ul>
+    <li>Tropical Mocktail</li>
+    <li>Sea Breeze Lemonade</li>
+    <li>Ocean Smoothie</li>
+    <li>Coral Latte</li>
+    <li>Deep Sea Espresso</li>
+  </ul>
+  <h3>Snacks</h3>
+  <ul>
+    <li>Seaweed Chips</li>
+    <li>Fish-Shaped Crackers</li>
+    <li>Coral Popcorn</li>
+    <li>Ocean Trail Mix</li>
+    <li>Octopus Pretzels</li>
+  </ul>
+  <h3>Meals</h3>
+  <ul>
+    <li>Seafood Platter</li>
+    <li>Fish Tacos</li>
+    <li>Crab Cakes</li>
+    <li>Seaweed Salad</li>
+    <li>Lobster Roll</li>
+  </ul>
+  <h3>Desserts</h3>
+  <ul>
+    <li>Ocean Delight Cake</li>
+    <li>Mermaid Cupcakes</li>
+    <li>Jellyfish Jelly</li>
+    <li>Seashell Cookies</li>
+    <li>Coral Brownies</li>
+  </ul>
+</section>
+
+<!-- ===== HOTELS ===== -->
+<section id="hotels" class="section hotels">
+  <h2>Hotels & Stay Packages</h2>
+  <div class="card-grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1542317854-9e721c5c40d0?auto=format&fit=crop&w=400&q=80" alt="Ocean View Hotel">
+      <h3>Ocean View Hotel</h3>
+      <p>5-star hotel with amazing views.</p>
+      <p>Price: $150/night</p>
+      <a href="#booking" class="btn-primary">Book Now</a>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=400&q=80" alt="Sea Breeze Inn">
+      <h3>Sea Breeze Inn</h3>
+      <p>Cozy family rooms close to aquarium.</p>
+      <p>Price: $120/night</p>
+      <a href="#booking" class="btn-primary">Book Now</a>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1501117716987-c8ecb2fbd176?auto=format&fit=crop&w=400&q=80" alt="Marine Suites">
+      <h3>Marine Suites</h3>
+      <p>Includes breakfast & aquarium tickets.</p>
+      <p>Price: $200/night</p>
+      <a href="#booking" class="btn-primary">Book Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SHOP ===== -->
+<section id="shop" class="section shop">
+  <h2>Shop</h2>
+  <div class="card-grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1598514981406-6e8e4b6d1837?auto=format&fit=crop&w=400&q=80" alt="Souvenir Mug">
+      <h3>Souvenir Mug</h3>
+      <p>Price: $12</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1610192794322-7802d75e1e95?auto=format&fit=crop&w=400&q=80" alt="Toy">
+      <h3>Plush Sea Turtle</h3>
+      <p>Price: $20</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1603030841417-5d9b0d8c9a5a?auto=format&fit=crop&w=400&q=80" alt="Shirt">
+      <h3>Aquarium T-Shirt</h3>
+      <p>Price: $25</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1621062450341-4b6f54fc1c9e?auto=format&fit=crop&w=400&q=80" alt="Coral Model">
+      <h3>Mini Coral Reef Model</h3>
+      <p>Price: $35</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GAMES ===== -->
+<section id="games" class="section games">
+  <h2>🎮 Aquarium Games</h2>
+  <div class="tabs">
+    <input type="radio" name="tab" id="tab1" checked>
+    <input type="radio" name="tab" id="tab2">
+    <div class="tab-labels">
+      <label for="tab1">Animal Guessing</label>
+      <label for="tab2">Ocean Quiz</label>
+    </div>
+    <div class="tab-content">
+      <div class="animal-quiz">
+        <h3>Guess the Animal!</h3>
+        <ol>
+          <li>"I have eight arms and can change colors." → <strong>Octopus</strong></li>
+          <li>"I have a long snout and curl my tail." → <strong>Seahorse</strong></li>
+          <li>"I glow in the dark and float gracefully." → <strong>Jellyfish</strong></li>
+          <li>"I have a hard shell and walk sideways." → <strong>Crab</strong></li>
+          <li>"I have sharp teeth and fins." → <strong>Shark</strong></li>
+          <li>"I swim in orange and white stripes." → <strong>Clownfish</strong></li>
+          <li>"I have a spiral shell and live in tide pools." → <strong>Snail</strong></li>
+          <li>"I flap my fins and fly through water." → <strong>Flying Fish</strong></li>
+          <li>"I have a large shell and live in freshwater." → <strong>Turtle</strong></li>
+          <li>"I have tentacles and a suction cup grip." → <strong>Squid</strong></li>
+        </ol>
+      </div>
+      <div class="aquarium-quiz">
+        <h3>Ocean Quiz</h3>
+        <ol>
+          <li>Largest species of shark? → Whale Shark</li>
+          <li>Fastest fish? → Sailfish</li>
+          <li>Colorful reef builder? → Coral</li>
+          <li>Largest mammal? → Blue Whale</li>
+          <li>Smallest seahorse? → Pygmy Seahorse</li>
+          <li>Marine mammal known for intelligence? → Dolphin</li>
+          <li>Fish that can inflate? → Pufferfish</li>
+          <li>Predator with eight arms? → Octopus</li>
+          <li>Crustacean with claws? → Crab</li>
+          <li>Glow-in-the-dark jelly? → Bioluminescent Jellyfish</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section id="faq" class="section faq">
+  <h2>FAQ</h2>
+  <details>
+    <summary>What are your opening hours?</summary>
+    <p>We are open daily from 9 AM to 8 PM.</p>
+  </details>
+  <details>
+    <summary>Do you offer group discounts?</summary>
+    <p>Yes! Contact us for group rates.</p>
+  </details>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section contact">
+  <h2>Contact Us</h2>
+  <form>
+    <label>Name: <input type="text" placeholder="Full Name"></label>
+    <label>Email: <input type="email" placeholder="Email"></label>
+    <label>Message: <textarea placeholder="Your message"></textarea></label>
+    <button type="submit" class="btn-primary">Send</button>
+  </form>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <p>&copy; 2025 BlueDepths Aquarium | 123 Ocean Ave, Houston, TX</p>
+  <div class="social">
+    <div class="social-icon">🐦</div>
+    <div class="social-icon">📘</div>
+    <div class="social-icon">📸</div>
+  </div>
+</footer>
+
+</div>
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+ 
+
 
 

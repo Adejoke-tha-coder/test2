@@ -3,364 +3,501 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BlueDepths Aquarium</title>
+<title>StudyBuddy Mega Deluxe</title>
 <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<div class="site">
+<!-- Notification Popup -->
+<div id="notification"></div>
 
-<!-- ===== HEADER ===== -->
-<header class="site-header">
-  <div class="logo">BD</div>
-  <nav class="nav-bar">
-    <a href="#home">Home</a>
-    <a href="#booking">Visit / Booking</a>
-    <a href="#exhibits">Exhibits</a>
-    <a href="#events">Events</a>
-    <a href="#membership">Membership</a>
-    <a href="#cafe">Cafe</a>
-    <a href="#hotels">Hotels</a>
-    <a href="#shop">Shop</a>
-    <a href="#faq">FAQ</a>
-    <a href="#contact">Contact</a>
-    <a href="#games" class="game-btn">Games</a>
-  </nav>
-</header>
+<!-- Welcome Screen -->
+<div id="welcome-screen">
+  <h1>🌸 Welcome to StudyBuddy Mega Deluxe! 🌸</h1>
+  <p>Sign in or log in to start your interactive study adventure!</p>
 
-<!-- ===== HERO ===== -->
-<section id="home" class="hero">
-  <div class="hero-text">
-    <h1>Welcome to BlueDepths Aquarium</h1>
-    <p>Explore marine life, interactive games, events, and dining experiences!</p>
-    <a href="#booking" class="btn-primary">Book Tickets</a>
-  </div>
-  <div class="hero-aquarium">
-    <div class="bubble" style="left:10%; animation-duration:6s;"></div>
-    <div class="bubble" style="left:35%; animation-duration:8s;"></div>
-    <div class="bubble" style="left:60%; animation-duration:7s;"></div>
-    <div class="fish fish1"></div>
-    <div class="fish fish2"></div>
-    <div class="fish fish3"></div>
-    <div class="seaweed seaweed1"></div>
-    <div class="seaweed seaweed2"></div>
-    <div class="seaweed seaweed3"></div>
-    <div class="seaweed seaweed4"></div>
-    <div class="light-rays"></div>
-  </div>
-</section>
-
-<!-- ===== BOOKING / VISIT ===== -->
-<section id="booking" class="section booking">
-  <h2>Visit / Booking</h2>
-  <p>Plan your visit! Tickets, hours, and special packages available below.</p>
-  <div class="booking-grid">
-    <div class="booking-photo">
-      <img src="https://images.unsplash.com/photo-1578926370193-9b0e51b83fc1?auto=format&fit=crop&w=600&q=80" alt="Aquarium Entrance">
-      <p>Entrance & Tickets</p>
+  <!-- Pet Selection -->
+  <div id="pet-selection">
+    <p>Select your Study Buddy Pet:</p>
+    <div class="pet-options">
+      <img class="pet-option" src="photo1.jpg" alt="Pet 1">
+      <img class="pet-option" src="photo2.jpg" alt="Pet 2">
+      <img class="pet-option" src="photo3.jpg" alt="Pet 3">
+      <img class="pet-option" src="photo4.jpg" alt="Pet 4">
+      <img class="pet-option" src="photo5.jpg" alt="Pet 5">
+      <img class="pet-option" src="photo6.jpg" alt="Pet 6">
+      <img class="pet-option" src="photo7.jpg" alt="Pet 7">
+      <img class="pet-option" src="photo8.jpg" alt="Pet 8">
+      <img class="pet-option" src="photo9.jpg" alt="Pet 9">
+      <img class="pet-option" src="photo10.jpg" alt="Pet 10">
     </div>
-    <div class="booking-form">
-      <form>
-        <label>Name: <input type="text" placeholder="Full Name" required></label>
-        <label>Date: <input type="date" required></label>
-        <label>Visitors: <input type="number" min="1" value="1"></label>
-        <label>Package:
-          <select>
-            <option>Standard</option>
-            <option>VIP</option>
-            <option>Family</option>
-          </select>
-        </label>
-        <button type="submit" class="btn-primary">Book Now</button>
-      </form>
+    <p>Preview your pet before signing in! 🐾</p>
+  </div>
+
+  <!-- Background Selection -->
+  <div id="background-selection">
+    <p>Select a background:</p>
+    <div class="background-options">
+      <div class="bg-option" data-bg="sunset">🌅 Sunset</div>
+      <div class="bg-option" data-bg="morning">🌸 Morning</div>
+      <div class="bg-option" data-bg="forest">🌿 Forest</div>
+      <div class="bg-option" data-bg="space">🌌 Space</div>
+      <div class="bg-option" data-bg="pink-cloud">☁️ Pink Clouds</div>
+      <div class="bg-option" data-bg="rainbow">🌈 Rainbow</div>
+      <div class="bg-option" data-bg="ocean">🌊 Ocean</div>
+      <div class="bg-option" data-bg="desert">🏜 Desert</div>
     </div>
   </div>
-</section>
 
-<!-- ===== EXHIBITS ===== -->
-<section id="exhibits" class="section exhibits">
-  <h2>Our Exhibits</h2>
-  <div class="card-grid">
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=80" alt="Clownfish">
-      <h3>Clownfish Exhibit</h3>
-      <p>Bright orange and white striped fish living among anemones.</p>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&fit=crop&w=400&q=80" alt="Shark">
-      <h3>Shark Tank</h3>
-      <p>Watch majestic sharks swim in their natural habitat tank.</p>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=400&q=80" alt="Octopus">
-      <h3>Octopus Cove</h3>
-      <p>Intelligent and fascinating octopuses in a specialized habitat.</p>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1565058528601-5beaa35b3aa6?auto=format&fit=crop&w=400&q=80" alt="Seahorse">
-      <h3>Seahorse Garden</h3>
-      <p>Delicate seahorses floating gracefully among coral.</p>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1544126594-8e24d3f0f3e8?auto=format&fit=crop&w=400&q=80" alt="Jellyfish">
-      <h3>Jellyfish Aquarium</h3>
-      <p>Mesmerizing jellyfish glowing in their tanks.</p>
-    </div>
+  <!-- Sign In / Log In Buttons -->
+  <div id="choice-buttons">
+    <button id="sign-in-choice">Sign In</button>
+    <button id="log-in-choice">Log In</button>
   </div>
-</section>
 
-<!-- ===== EVENTS ===== -->
-<section id="events" class="section events">
-  <h2>Upcoming Events</h2>
-  <div class="card-grid">
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1564694202779-bc908c327862?auto=format&fit=crop&w=400&q=80" alt="Night Dive">
-      <h3>Night Dive Adventure</h3>
-      <p>Experience the aquarium after hours with guided tours.</p>
-      <p>Price: $50/person | Date: Oct 20, 2025</p>
-      <a href="#booking" class="btn-primary">Book Now</a>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1581041223932-94d2c90c6e8e?auto=format&fit=crop&w=400&q=80" alt="Workshop">
-      <h3>Marine Biology Workshop</h3>
-      <p>Hands-on experience learning about marine life.</p>
-      <p>Price: $35/person | Date: Oct 25, 2025</p>
-      <a href="#booking" class="btn-primary">Book Now</a>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1591012911207-4b982c2f6b29?auto=format&fit=crop&w=400&q=80" alt="Kids Program">
-      <h3>Kids Sea Exploration</h3>
-      <p>Fun educational activities for children ages 5-12.</p>
-      <p>Price: $25/person | Date: Nov 1, 2025</p>
-      <a href="#booking" class="btn-primary">Book Now</a>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1525309631016-5d48f3fa88b0?auto=format&fit=crop&w=400&q=80" alt="Coral Restoration">
-      <h3>Coral Restoration Day</h3>
-      <p>Participate in our coral conservation project.</p>
-      <p>Price: $40/person | Date: Nov 10, 2025</p>
-      <a href="#booking" class="btn-primary">Book Now</a>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1560347876-aeef00ee58a1?auto=format&fit=crop&w=400&q=80" alt="Photography Tour">
-      <h3>Photography Tour</h3>
-      <p>Capture the beauty of marine life with a guided photography session.</p>
-      <p>Price: $45/person | Date: Nov 15, 2025</p>
-      <a href="#booking" class="btn-primary">Book Now</a>
-    </div>
+  <!-- Sign In Form -->
+  <div id="sign-in-form" class="form-container" style="display:none;">
+    <h2>Create Your Account</h2>
+    <label for="si-username">Name:</label>
+    <input type="text" id="si-username" placeholder="Your Name"><br><br>
+    <label for="si-email">Email:</label>
+    <input type="email" id="si-email" placeholder="Your Email"><br><br>
+    <label for="si-password">Password:</label>
+    <input type="password" id="si-password" placeholder="Password"><br><br>
+    <button id="si-submit">Create Account</button>
+    <p class="form-note">Your pet and XP system will be ready after sign-in! 💖</p>
+    <p class="form-hint">Hint: Choose a strong password to unlock secret achievements!</p>
   </div>
-</section>
 
-<!-- ===== MEMBERSHIP ===== -->
-<section id="membership" class="section membership">
-  <h2>Membership</h2>
-  <div class="card-grid">
-    <div class="card">
-      <h3>Basic</h3>
-      <p>Free entry once a month.</p>
-      <p>Price: $60/year</p>
-      <a href="#booking" class="btn-primary">Join Now</a>
-    </div>
-    <div class="card">
-      <h3>Family</h3>
-      <p>Unlimited entry for family members.</p>
-      <p>Price: $180/year</p>
-      <a href="#booking" class="btn-primary">Join Now</a>
-    </div>
-    <div class="card">
-      <h3>Premium</h3>
-      <p>All access + VIP events & gifts.</p>
-      <p>Price: $300/year</p>
-      <a href="#booking" class="btn-primary">Join Now</a>
-    </div>
+  <!-- Log In Form -->
+  <div id="log-in-form" class="form-container" style="display:none;">
+    <h2>Log Into Your Account</h2>
+    <label for="li-email">Email:</label>
+    <input type="email" id="li-email" placeholder="Your Email"><br><br>
+    <label for="li-password">Password:</label>
+    <input type="password" id="li-password" placeholder="Your Password"><br><br>
+    <button id="li-submit">Log In</button>
+    <p class="form-note">Your pet is waiting excitedly! 🐾</p>
+    <p class="form-hint">Hint: Use the same email you signed up with for pet continuity!</p>
   </div>
-</section>
-
-<!-- ===== CAFE ===== -->
-<section id="cafe" class="section cafe">
-  <h2>Aquarium Cafe Menu</h2>
-  <h3>Drinks</h3>
-  <ul>
-    <li>Tropical Mocktail</li>
-    <li>Sea Breeze Lemonade</li>
-    <li>Ocean Smoothie</li>
-    <li>Coral Latte</li>
-    <li>Deep Sea Espresso</li>
-  </ul>
-  <h3>Snacks</h3>
-  <ul>
-    <li>Seaweed Chips</li>
-    <li>Fish-Shaped Crackers</li>
-    <li>Coral Popcorn</li>
-    <li>Ocean Trail Mix</li>
-    <li>Octopus Pretzels</li>
-  </ul>
-  <h3>Meals</h3>
-  <ul>
-    <li>Seafood Platter</li>
-    <li>Fish Tacos</li>
-    <li>Crab Cakes</li>
-    <li>Seaweed Salad</li>
-    <li>Lobster Roll</li>
-  </ul>
-  <h3>Desserts</h3>
-  <ul>
-    <li>Ocean Delight Cake</li>
-    <li>Mermaid Cupcakes</li>
-    <li>Jellyfish Jelly</li>
-    <li>Seashell Cookies</li>
-    <li>Coral Brownies</li>
-  </ul>
-</section>
-
-<!-- ===== HOTELS ===== -->
-<section id="hotels" class="section hotels">
-  <h2>Hotels & Stay Packages</h2>
-  <div class="card-grid">
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1542317854-9e721c5c40d0?auto=format&fit=crop&w=400&q=80" alt="Ocean View Hotel">
-      <h3>Ocean View Hotel</h3>
-      <p>5-star hotel with amazing views.</p>
-      <p>Price: $150/night</p>
-      <a href="#booking" class="btn-primary">Book Now</a>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=400&q=80" alt="Sea Breeze Inn">
-      <h3>Sea Breeze Inn</h3>
-      <p>Cozy family rooms close to aquarium.</p>
-      <p>Price: $120/night</p>
-      <a href="#booking" class="btn-primary">Book Now</a>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1501117716987-c8ecb2fbd176?auto=format&fit=crop&w=400&q=80" alt="Marine Suites">
-      <h3>Marine Suites</h3>
-      <p>Includes breakfast & aquarium tickets.</p>
-      <p>Price: $200/night</p>
-      <a href="#booking" class="btn-primary">Book Now</a>
-    </div>
-  </div>
-</section>
-
-<!-- ===== SHOP ===== -->
-<section id="shop" class="section shop">
-  <h2>Shop</h2>
-  <div class="card-grid">
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1598514981406-6e8e4b6d1837?auto=format&fit=crop&w=400&q=80" alt="Souvenir Mug">
-      <h3>Souvenir Mug</h3>
-      <p>Price: $12</p>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1610192794322-7802d75e1e95?auto=format&fit=crop&w=400&q=80" alt="Toy">
-      <h3>Plush Sea Turtle</h3>
-      <p>Price: $20</p>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1603030841417-5d9b0d8c9a5a?auto=format&fit=crop&w=400&q=80" alt="Shirt">
-      <h3>Aquarium T-Shirt</h3>
-      <p>Price: $25</p>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1621062450341-4b6f54fc1c9e?auto=format&fit=crop&w=400&q=80" alt="Coral Model">
-      <h3>Mini Coral Reef Model</h3>
-      <p>Price: $35</p>
-    </div>
-  </div>
-</section>
-
-<!-- ===== GAMES ===== -->
-<section id="games" class="section games">
-  <h2>🎮 Aquarium Games</h2>
-  <div class="tabs">
-    <input type="radio" name="tab" id="tab1" checked>
-    <input type="radio" name="tab" id="tab2">
-    <div class="tab-labels">
-      <label for="tab1">Animal Guessing</label>
-      <label for="tab2">Ocean Quiz</label>
-    </div>
-    <div class="tab-content">
-      <div class="animal-quiz">
-        <h3>Guess the Animal!</h3>
-        <ol>
-          <li>"I have eight arms and can change colors." → <strong>Octopus</strong></li>
-          <li>"I have a long snout and curl my tail." → <strong>Seahorse</strong></li>
-          <li>"I glow in the dark and float gracefully." → <strong>Jellyfish</strong></li>
-          <li>"I have a hard shell and walk sideways." → <strong>Crab</strong></li>
-          <li>"I have sharp teeth and fins." → <strong>Shark</strong></li>
-          <li>"I swim in orange and white stripes." → <strong>Clownfish</strong></li>
-          <li>"I have a spiral shell and live in tide pools." → <strong>Snail</strong></li>
-          <li>"I flap my fins and fly through water." → <strong>Flying Fish</strong></li>
-          <li>"I have a large shell and live in freshwater." → <strong>Turtle</strong></li>
-          <li>"I have tentacles and a suction cup grip." → <strong>Squid</strong></li>
-        </ol>
-      </div>
-      <div class="aquarium-quiz">
-        <h3>Ocean Quiz</h3>
-        <ol>
-          <li>Largest species of shark? → Whale Shark</li>
-          <li>Fastest fish? → Sailfish</li>
-          <li>Colorful reef builder? → Coral</li>
-          <li>Largest mammal? → Blue Whale</li>
-          <li>Smallest seahorse? → Pygmy Seahorse</li>
-          <li>Marine mammal known for intelligence? → Dolphin</li>
-          <li>Fish that can inflate? → Pufferfish</li>
-          <li>Predator with eight arms? → Octopus</li>
-          <li>Crustacean with claws? → Crab</li>
-          <li>Glow-in-the-dark jelly? → Bioluminescent Jellyfish</li>
-        </ol>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== FAQ ===== -->
-<section id="faq" class="section faq">
-  <h2>FAQ</h2>
-  <details>
-    <summary>What are your opening hours?</summary>
-    <p>We are open daily from 9 AM to 8 PM.</p>
-  </details>
-  <details>
-    <summary>Do you offer group discounts?</summary>
-    <p>Yes! Contact us for group rates.</p>
-  </details>
-</section>
-
-<!-- ===== CONTACT ===== -->
-<section id="contact" class="section contact">
-  <h2>Contact Us</h2>
-  <form>
-    <label>Name: <input type="text" placeholder="Full Name"></label>
-    <label>Email: <input type="email" placeholder="Email"></label>
-    <label>Message: <textarea placeholder="Your message"></textarea></label>
-    <button type="submit" class="btn-primary">Send</button>
-  </form>
-</section>
-
-<!-- ===== FOOTER ===== -->
-<footer class="site-footer">
-  <p>&copy; 2025 BlueDepths Aquarium | 123 Ocean Ave, Houston, TX</p>
-  <div class="social">
-    <div class="social-icon">🐦</div>
-    <div class="social-icon">📘</div>
-    <div class="social-icon">📸</div>
-  </div>
-</footer>
-
 </div>
 
+<!-- Main App Container -->
+<div id="main-app" style="display:none;">
+  <div class="container">
+
+    <!-- Greeting Section -->
+    <div class="greeting-section">
+      <h1 id="greeting">Welcome Back, Student! 🌟</h1>
+      <button id="change-background">Change Background</button>
+      <p id="greeting-note">Keep switching backgrounds to match your mood! 🎨</p>
+      <div class="decorative-ribbons">
+        <div class="ribbon ribbon-top-left"></div>
+        <div class="ribbon ribbon-top-right"></div>
+        <div class="ribbon ribbon-bottom-left"></div>
+        <div class="ribbon ribbon-bottom-right"></div>
+      </div>
+    </div>
+
+    <!-- Pet Section -->
+    <div class="pet-section">
+      <div class="pet-container">
+        <img id="pet" src="pet1.png" alt="Your Pet">
+        <p id="pet-status">Your pet is neutral.</p>
+        <p id="pet-happiness">Happiness: <span id="pet-happy">50</span>/100</p>
+      </div>
+      <div class="pet-actions">
+        <button id="feed-pet">Feed Pet 🍎</button>
+        <button id="play-pet">Play with Pet 🧸</button>
+        <button id="teach-trick">Teach Trick 🎩</button>
+        <button id="pet-sleep">Let Pet Sleep 🛌</button>
+        <button id="pet-walk">Take Pet for a Walk 🚶</button>
+      </div>
+      <div class="pet-hints">
+        <p id="pet-hint">Happy pet = more XP when studying! 💖</p>
+        <p>Feed your pet with different foods to see reactions!</p>
+        <p>Play mini-games to increase pet happiness!</p>
+        <p>Teach new tricks for bonus XP!</p>
+        <p>Walking your pet restores energy and unlocks achievements!</p>
+      </div>
+    </div>
+
+    <!-- XP Section -->
+    <div class="xp-section">
+      <p>XP: <span id="xp">0</span> / 500</p>
+      <div class="xp-bar">
+        <div id="xp-fill"></div>
+      </div>
+      <p id="xp-note">Gain XP by studying, completing tasks, and making your pet happy! 🌟</p>
+      <p>Reach new levels to unlock decorations, ribbons, and pet animations!</p>
+      <p>Bonus XP is awarded for consecutive study sessions!</p>
+      <p>XP multipliers appear if your pet is happy!</p>
+      <p>Check your achievements tab for milestone rewards!</p>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="nav-buttons">
+      <button class="nav-button" id="study-hall">Study Hall 📚</button>
+      <button class="nav-button" id="calendar">Calendar 📅</button>
+      <button class="nav-button" id="to-do-list">To-Do List 📝</button>
+      <button class="nav-button" id="notes">Notes 🗒️</button>
+      <button class="nav-button" id="resources">Resources 📚</button>
+      <button class="nav-button" id="achievements">Achievements 🏆</button>
+      <button class="nav-button" id="pet-care">Pet Care 💖</button>
+    </div>
+
+    <!-- Study Hall Section -->
+    <div id="study-section" class="hidden-section" style="display:none;">
+      <h2>📚 Study Hall</h2>
+      <p>Choose a game or activity to study:</p>
+
+      <!-- Flashcards Game -->
+      <div class="flashcard-game">
+        <h3>Flashcards Game</h3>
+        <p id="study-question">Question: What is 2 + 2?</p>
+        <input type="text" id="study-answer" placeholder="Your Answer">
+        <button id="submit-answer">Submit Answer</button>
+        <p class="hint">Get correct to earn XP and make your pet happy!</p>
+        <p class="extra-hint">Tip: Flashcards improve memory retention!</p>
+        <p class="extra-hint">Use hints wisely for bonus XP!</p>
+        <p class="extra-hint">Correct streaks = extra happiness!</p>
+        <p class="extra-hint">You can review wrong answers later!</p>
+      </div>
+
+      <!-- Quiz Game -->
+      <div class="quiz-game">
+        <h3>Quiz Game</h3>
+        <p id="quiz-question">Question: Capital of France?</p>
+        <div id="quiz-options">
+          <button class="quiz-option">London</button>
+          <button class="quiz-option">Paris</button>
+          <button class="quiz-option">Rome</button>
+          <button class="quiz-option">Berlin</button>
+          <button class="quiz-option">Madrid</button>
+        </div>
+        <button id="next-question">Next Question</button>
+        <p class="hint">Correct answers = XP boost!</p>
+        <p class="extra-hint">Quiz improves recall speed!</p>
+        <p class="extra-hint">Each correct streak = pet happiness!</p>
+        <p class="extra-hint">Leaderboard coming soon!</p>
+        <p class="extra-hint">Bonus question appears randomly for extra XP!</p>
+      </div>
+
+      <!-- Typing Challenge -->
+      <div class="typing-game">
+        <h3>Typing Challenge</h3>
+        <p id="typing-text">Type this sentence as fast as you can!</p>
+        <input type="text" id="typing-input" placeholder="Type here">
+        <button id="submit-typing">Submit</button>
+        <p class="hint">Faster typing = happier pet!</p>
+        <p class="extra-hint">Improve your typing speed over time!</p>
+        <p class="extra-hint">Accuracy is more important than speed!</p>
+        <p class="extra-hint">Type streaks = XP multiplier!</p>
+        <p class="extra-hint">Practice regularly to unlock achievements!</p>
+      </div>
+
+      <!-- Memory Game -->
+      <div class="memory-game">
+        <h3>Memory Match</h3>
+        <div class="memory-grid">
+          <div class="memory-card">?</div>
+          <div class="memory-card">?</div>
+          <div class="memory-card">?</div>
+          <div class="memory-card">?</div>
+          <div class="memory-card">?</div>
+          <div class="memory-card">?</div>
+          <div class="memory-card">?</div>
+          <div class="memory-card">?</div>
+        </div>
+        <p class="hint">Match pairs to earn XP!</p>
+        <p class="extra-hint">Memory games improve retention!</p>
+        <p class="extra-hint">Correct matches = pet happiness boost!</p>
+        <p class="extra-hint">Time bonus gives extra XP!</p>
+        <p class="extra-hint">Random card flips for challenge!</p>
+      </div>
+
+      <!-- Puzzle Game -->
+      <div class="puzzle-game">
+        <h3>Puzzle Game</h3>
+        <p>Solve the puzzle to earn XP!</p>
+        <div class="puzzle-grid">
+          <div class="puzzle-piece">1</div>
+          <div class="puzzle-piece">2</div>
+          <div class="puzzle-piece">3</div>
+          <div class="puzzle-piece">4</div>
+          <div class="puzzle-piece">5</div>
+          <div class="puzzle-piece">6</div>
+          <div class="puzzle-piece">7</div>
+          <div class="puzzle-piece">8</div>
+          <div class="puzzle-piece">9</div>
+        </div>
+        <p class="hint">Complete the puzzle = happy pet & XP!</p>
+        <p class="extra-hint">Complex puzzles unlock ribbons!</p>
+        <p class="extra-hint">Time bonus = extra XP!</p>
+        <p class="extra-hint">Daily puzzle streak = achievement!</p>
+        <p class="extra-hint">Puzzle rotation changes daily!</p>
+      </div>
+
+      <!-- End of Study Hall -->
+
+    </div>
+
+    <!-- Calendar Section -->
+    <div id="calendar-section" class="hidden-section" style="display:none;">
+      <h2>📅 Calendar</h2>
+      <p>Click a day to add a task or reminder!</p>
+
+      <!-- Calendar Grid -->
+      <div class="calendar-grid">
+        <!-- Week Days -->
+        <div class="calendar-weekdays">
+          <div>Sun</div>
+          <div>Mon</div>
+          <div>Tue</div>
+          <div>Wed</div>
+          <div>Thu</div>
+          <div>Fri</div>
+          <div>Sat</div>
+        </div>
+
+        <!-- Calendar Dates -->
+        <div class="calendar-dates">
+          <!-- 5 rows x 7 columns = 35 days -->
+          <div class="calendar-day" data-date="1">1</div>
+          <div class="calendar-day" data-date="2">2</div>
+          <div class="calendar-day" data-date="3">3</div>
+          <div class="calendar-day" data-date="4">4</div>
+          <div class="calendar-day" data-date="5">5</div>
+          <div class="calendar-day" data-date="6">6</div>
+          <div class="calendar-day" data-date="7">7</div>
+
+          <div class="calendar-day" data-date="8">8</div>
+          <div class="calendar-day" data-date="9">9</div>
+          <div class="calendar-day" data-date="10">10</div>
+          <div class="calendar-day" data-date="11">11</div>
+          <div class="calendar-day" data-date="12">12</div>
+          <div class="calendar-day" data-date="13">13</div>
+          <div class="calendar-day" data-date="14">14</div>
+
+          <div class="calendar-day" data-date="15">15</div>
+          <div class="calendar-day" data-date="16">16</div>
+          <div class="calendar-day" data-date="17">17</div>
+          <div class="calendar-day" data-date="18">18</div>
+          <div class="calendar-day" data-date="19">19</div>
+          <div class="calendar-day" data-date="20">20</div>
+          <div class="calendar-day" data-date="21">21</div>
+
+          <div class="calendar-day" data-date="22">22</div>
+          <div class="calendar-day" data-date="23">23</div>
+          <div class="calendar-day" data-date="24">24</div>
+          <div class="calendar-day" data-date="25">25</div>
+          <div class="calendar-day" data-date="26">26</div>
+          <div class="calendar-day" data-date="27">27</div>
+          <div class="calendar-day" data-date="28">28</div>
+
+          <div class="calendar-day" data-date="29">29</div>
+          <div class="calendar-day" data-date="30">30</div>
+          <div class="calendar-day" data-date="31">31</div>
+          <div class="calendar-day extra-day"></div>
+          <div class="calendar-day extra-day"></div>
+          <div class="calendar-day extra-day"></div>
+          <div class="calendar-day extra-day"></div>
+        </div>
+      </div>
+
+      <!-- Calendar Interaction Panel -->
+      <div class="calendar-panel">
+        <h3>Add / View Task</h3>
+        <input type="text" id="calendar-task-input" placeholder="Task name">
+        <input type="time" id="calendar-task-time">
+        <button id="calendar-add-task">Add Task</button>
+        <ul id="calendar-task-list">
+          <!-- Tasks will appear here -->
+        </ul>
+        <p class="calendar-hint">Click a date to edit or delete tasks!</p>
+        <p class="calendar-hint">Tasks will give you bonus XP when completed!</p>
+        <p class="calendar-hint">Color-coded tasks help track subjects!</p>
+        <p class="calendar-hint">Daily reminder pop-ups will notify you!</p>
+        <p class="calendar-hint">Streaks increase pet happiness!</p>
+      </div>
+    </div>
+
+    <!-- To-Do List Section -->
+    <div id="todo-section" class="hidden-section" style="display:none;">
+      <h2>📝 To-Do List</h2>
+      <p>Check off items to earn XP and pet happiness!</p>
+
+      <!-- To-Do Inputs -->
+      <div class="todo-inputs">
+        <input type="text" id="todo-item-input" placeholder="New task">
+        <button id="todo-add-item">Add Task</button>
+      </div>
+
+      <!-- To-Do List Display -->
+      <ul id="todo-list">
+        <li class="todo-item">Example Task 1 <button class="todo-complete">Complete</button></li>
+        <li class="todo-item">Example Task 2 <button class="todo-complete">Complete</button></li>
+        <li class="todo-item">Example Task 3 <button class="todo-complete">Complete</button></li>
+        <li class="todo-item">Example Task 4 <button class="todo-complete">Complete</button></li>
+        <li class="todo-item">Example Task 5 <button class="todo-complete">Complete</button></li>
+      </ul>
+
+      <!-- To-Do Hints -->
+      <p class="todo-hint">Complete daily tasks to increase XP!</p>
+      <p class="todo-hint">Tasks are color-coded by priority!</p>
+      <p class="todo-hint">Overdue tasks reduce streak multiplier!</p>
+      <p class="todo-hint">Recurring tasks give bonus XP!</p>
+      <p class="todo-hint">Checking off tasks makes your pet happy!</p>
+    </div>
+
+    <!-- Notes Section -->
+    <div id="notes-section" class="hidden-section" style="display:none;">
+      <h2>🗒️ Notes</h2>
+      <p>Write your study notes here:</p>
+
+      <div class="notes-inputs">
+        <textarea id="note-input" placeholder="Write your note..."></textarea><br>
+        <button id="add-note">Add Note</button>
+      </div>
+
+      <ul id="notes-list">
+        <li class="note-item">Sample Note 1 <button class="note-delete">Delete</button></li>
+        <li class="note-item">Sample Note 2 <button class="note-delete">Delete</button></li>
+        <li class="note-item">Sample Note 3 <button class="note-delete">Delete</button></li>
+        <li class="note-item">Sample Note 4 <button class="note-delete">Delete</button></li>
+        <li class="note-item">Sample Note 5 <button class="note-delete">Delete</button></li>
+      </ul>
+
+      <p class="notes-hint">Notes can be color-coded for each subject!</p>
+      <p class="notes-hint">Important notes can be pinned!</p>
+      <p class="notes-hint">Adding notes increases study streak XP!</p>
+      <p class="notes-hint">Deleting notes reduces clutter but keeps XP!</p>
+      <p class="notes-hint">Notes sync with tasks for easier studying!</p>
+    </div>
+
+    <!-- Resources Section -->
+    <div id="resources-section" class="hidden-section" style="display:none;">
+      <h2>📚 Resources</h2>
+      <p>Pick your grade and subject to access study videos!</p>
+
+      <!-- Grade Selection -->
+      <div class="grade-selection">
+        <button class="grade-btn" data-grade="6">Grade 6</button>
+        <button class="grade-btn" data-grade="7">Grade 7</button>
+        <button class="grade-btn" data-grade="8">Grade 8</button>
+        <button class="grade-btn" data-grade="9">Grade 9</button>
+        <button class="grade-btn" data-grade="10">Grade 10</button>
+        <button class="grade-btn" data-grade="11">Grade 11</button>
+        <button class="grade-btn" data-grade="12">Grade 12</button>
+      </div>
+
+      <!-- Subject Selection -->
+      <div class="subject-selection">
+        <button class="subject-btn" data-subject="math">Math</button>
+        <button class="subject-btn" data-subject="science">Science</button>
+        <button class="subject-btn" data-subject="english">English</button>
+        <button class="subject-btn" data-subject="history">History</button>
+        <button class="subject-btn" data-subject="art">Art</button>
+      </div>
+
+      <!-- Resource Display -->
+      <div id="resources-display">
+        <div class="resource-card">
+          <h3>Math Video Example</h3>
+          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+          <p>Video explains basic algebra concepts.</p>
+        </div>
+        <div class="resource-card">
+          <h3>Science Video Example</h3>
+          <iframe src="https://www.youtube.com/embed/oHg5SJYRHA0" frameborder="0" allowfullscreen></iframe>
+          <p>Video explains Newton's Laws of Motion.</p>
+        </div>
+        <div class="resource-card">
+          <h3>English Video Example</h3>
+          <iframe src="https://www.youtube.com/embed/9bZkp7q19f0" frameborder="0" allowfullscreen></iframe>
+          <p>Video explains essay writing tips.</p>
+        </div>
+        <div class="resource-card">
+          <h3>History Video Example</h3>
+          <iframe src="https://www.youtube.com/embed/tVj0ZTS4WF4" frameborder="0" allowfullscreen></iframe>
+          <p>Video covers World War II overview.</p>
+        </div>
+        <div class="resource-card">
+          <h3>Art Video Example</h3>
+          <iframe src="https://www.youtube.com/embed/V-_O7nl0Ii0" frameborder="0" allowfullscreen></iframe>
+          <p>Video shows watercolor techniques.</p>
+        </div>
+      </div>
+
+      <p class="resource-hint">Pick your grade first, then subject to see the video.</p>
+      <p class="resource-hint">Videos are interactive: take notes and add tasks while watching!</p>
+      <p class="resource-hint">Completing videos increases your XP!</p>
+      <p class="resource-hint">Videos can be replayed anytime for review!</p>
+      <p class="resource-hint">Bonus XP for watching daily study sessions!</p>
+    </div>
+
+    <!-- Achievements Section -->
+    <div id="achievements-section" class="hidden-section" style="display:none;">
+      <h2>🏆 Achievements</h2>
+      <p>Check your earned badges and milestones!</p>
+
+      <ul id="achievements-list">
+        <li>First Study Session ✔️</li>
+        <li>Daily Streak 3 Days 🔥</li>
+        <li>Pet Happiness Level 50 ❤️</li>
+        <li>Completed First Quiz 🎯</li>
+        <li>Completed Flashcard Game 🎴</li>
+        <li>Typing Challenge Master ✨</li>
+        <li>Memory Game Genius 🧠</li>
+        <li>Puzzle Solver 🧩</li>
+        <li>Task Completion Streak 📌</li>
+        <li>Calendar Consistency 🌸</li>
+      </ul>
+
+      <p class="achievement-hint">Achievements unlock ribbons, decorations, and XP multipliers!</p>
+      <p class="achievement-hint">Click an achievement to see details and bonus tips!</p>
+      <p class="achievement-hint">Earn all achievements to unlock secret pets!</p>
+      <p class="achievement-hint">Special seasonal achievements appear on holidays!</p>
+      <p class="achievement-hint">Achievements help track progress over time!</p>
+    </div>
+
+    <!-- Pet Care Section -->
+    <div id="pet-care-section" class="hidden-section" style="display:none;">
+      <h2>💖 Pet Care</h2>
+      <p>Keep your pet happy, healthy, and energetic!</p>
+
+      <div class="pet-care-actions">
+        <button id="pet-feed">Feed Pet 🍎</button>
+        <button id="pet-play">Play with Pet 🧸</button>
+        <button id="pet-bathe">Bathe Pet 🛁</button>
+        <button id="pet-sleep">Put Pet to Sleep 🛌</button>
+        <button id="pet-walk">Take Pet for a Walk 🚶</button>
+      </div>
+
+      <div class="pet-care-status">
+        <p>Hunger: <span id="pet-hunger">50</span>/100</p>
+        <p>Energy: <span id="pet-energy">50</span>/100</p>
+        <p>Happiness: <span id="pet-happiness">50</span>/100</p>
+        <p>Cleanliness: <span id="pet-cleanliness">50</span>/100</p>
+        <p>Training Progress: <span id="pet-training">0</span>/100</p>
+      </div>
+
+      <p class="pet-care-hint">Feed your pet to reduce hunger and increase happiness!</p>
+      <p class="pet-care-hint">Play mini-games to train and make your pet happy!</p>
+      <p class="pet-care-hint">Bathing increases cleanliness and pet energy!</p>
+      <p class="pet-care-hint">Sleep restores energy and unlocks tricks!</p>
+      <p class="pet-care-hint">Walking unlocks secret achievements and boosts XP!</p>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>© 2026 StudyBuddy. All Rights Reserved.</p>
+      <p>🌸 Customize your experience and have fun while studying! 🌸</p>
+    </footer>
+
+  </div> <!-- End Container -->
+</div> <!-- End Main App -->
+
+ <script src="main.Js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
- 
-
-
-
